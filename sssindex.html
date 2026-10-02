@@ -1,0 +1,258 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yuvadeep S - Portfolio</title>
+
+    <style>
+        /* Basic Page Style */
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        /* Hover Animation */
+        nav a:hover {
+            color: blue;
+            border-bottom: 2px solid blue;
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .profile img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #222;
+            box-shadow: 0 5px 15px gray;
+
+            /* Animation */
+            transition: 0.4s;
+        }
+
+        .profile img:hover {
+            transform: scale(1.08);
+            border-color: blue;
+        }
+
+        /* GRID LAYOUT */
+        .container {
+            width: 90%;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Portfolio Cards */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px gray;
+            text-align: center;
+
+            /* Animation */
+            transition: 0.3s;
+        }
+
+        /* Card Hover */
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 8px 20px gray;
+            border: 2px solid blue;
+        }
+
+        .card h2 {
+            color: #222;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skill {
+            background: #eeeeee;
+            padding: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: #222;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Contact */
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+        /* Focus Animation */
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 2px solid blue;
+            box-shadow: 0 0 8px lightblue;
+        }
+
+        button {
+            padding: 10px 25px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: blue;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Mobile View */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>Welcome to my personal portfolio</p>
+</header>
+
+<nav>
+    <a href="#name">Name</a>
+    <a href="#college">College</a>
+    <a href="#department">Department</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Profile -->
+<div class="profile">
+    <img src="yuva.jpeg" alt="Profile Photo">
+
+    <h2 id="name">Yuvadeep S</h2>
+    <p>MCA - 1st Year Student</p>
+</div>
+
+<!-- GRID CONTAINER -->
+<div class="container">
+
+    <div class="card" id="college">
+        <h2>College</h2>
+        <p>Sri Saraswathi Theyagaraja College - Pollachi</p>
+    </div>
+
+    <div class="card" id="department">
+        <h2>Department</h2>
+        <p>MCA - 1st Year</p>
+    </div>
+
+    <div class="card" id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">DATA SCIENCE</div>
+            <div class="skill">C++</div>
+            <div class="skill">Python</div>
+        </div>
+    </div>
+
+    <div class="card" id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Reading Books</p>
+        <p>Listening to Music</p>
+        <p>Playing Volleyball</p>
+    </div>
+
+    <div class="card" id="contact">
+        <h2>Contact</h2>
+
+        <p>Email: yuvadeepyuvadeep96@gmail.com</p>
+        <p>Phone: 9342004198</p>
+
+        <input type="text" placeholder="Enter your name">
+
+        <input type="email" placeholder="Enter your email">
+
+        <textarea placeholder="Enter your message"></textarea>
+
+        <br>
+
+        <button>Send Message</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Yuvadeep S | My Portfolio</p>
+</footer>
+
+</body>
+</html>
+```
